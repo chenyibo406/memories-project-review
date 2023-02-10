@@ -5,7 +5,7 @@ export const signin = (formData, navigate) => async (dispatch) => {
   // const dispatch = useDispatch();
   try {
     const { data } = await api.signIn(formData);
-    console.log(data);
+    // console.log(data);
     dispatch({ type: AUTH, data });
     navigate("/");
   } catch (error) {

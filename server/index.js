@@ -20,6 +20,8 @@ app.use("/user", userRoutes);
 // const CONNECTION_URL =
 //   "mongodb+srv://chenyibo416:1234@cluster0.vgkpwjj.mongodb.net/<dbname>?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
+const URL = process.env.CONNECTION_URL;
+// console.log(URL);
 
 mongoose.set(`strictQuery`, false);
 

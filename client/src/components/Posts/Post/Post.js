@@ -16,7 +16,7 @@ import moment from "moment";
 import useStyles from "./styles";
 import { useDispatch } from "react-redux";
 
-// import { deletePost } from "../../../api";
+
 import { deletePost, likePost } from "../../../actions/posts";
 
 const Post = ({ post, setCurrentId }) => {

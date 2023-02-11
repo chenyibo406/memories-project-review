@@ -43,7 +43,7 @@ const Auth = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(formData);
+    
     if (isSignup) {
       dispatch(signup(formData, navigate));
     } else {
@@ -66,7 +66,7 @@ const Auth = () => {
       const res = await axios.post(
         `https://www.googleapis.com/oauth2/v3/userinfo?access_token=${tokenResponse.access_token}`
       );
-      //   console.log(res);
+      
       const result = res?.data;
       const token = tokenResponse.access_token;
       try {

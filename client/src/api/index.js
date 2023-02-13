@@ -1,16 +1,8 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000" });
-
-// API.interceptors.request.use((req) => {
-//   if (localStorage.getItem("profile")) {
-//     req.headers.Authorization = `Bearer ${
-//       JSON.parse(localStorage.getItem("profile")).token
-//     }`;
-
-//     return req;
-//   }
-// });
+const API = axios.create({
+  baseURL: "https://app-tgijxdypaq-de.a.run.app/posts",
+});
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
